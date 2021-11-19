@@ -4,11 +4,17 @@ public class HaikuPoem {
     private static String firstLine;
     private static String secondLine;
     private static String thirdLine;
+    private static String author;
+    private int haikuID;
+    private static int counter = 0;
 
-    public HaikuPoem(String firstLine, String secondLine, String thirdLine) {
+    public HaikuPoem(String firstLine, String secondLine, String thirdLine, String author) {
         this.firstLine = firstLine;
         this.secondLine = secondLine;
         this.thirdLine = thirdLine;
+        this.author = author;
+        counter++;
+        this.haikuID = counter;
     }
 
     public static String getFirstLine() {
@@ -26,4 +32,10 @@ public class HaikuPoem {
         return thirdLine;
     }
 
+    @Override
+    public String toString() {
+        return "HaikuPoem{" +
+                "haikuID=" + haikuID +
+                '}';
+    }
 }

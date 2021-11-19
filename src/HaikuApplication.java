@@ -10,9 +10,11 @@ public class HaikuApplication {
 
         app.menu.welcomeUser();
 
-        app.menu.userInput();
+        app.menu.getFirstLine();
+        app.menu.getSecondLine();
+        app.menu.getThirdLine();
 
-        app.analysis.getFiveSyllables();
+        //app.analysis.getFiveSyllables();
 
 
 

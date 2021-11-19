@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 public class Menu {
     private Scanner inputFromUser;
-    Scanner scanner = new Scanner(System.in);
 
     public Menu(){
         this.inputFromUser = new Scanner(System.in);
@@ -26,17 +25,40 @@ public class Menu {
 
     }
 
+    public String author() {
 
-    public void userInput() {
+        System.out.println("Author of poem");
+        String author = inputFromUser.nextLine();
+        return author;
+    }
+
+    public String getFirstLine() {
 
         HaikuPoem.getFirstLine();
-        scanner.nextLine();
+        String firstLine = inputFromUser.nextLine();
+
+        return firstLine;
+    }
+
+    public String getSecondLine() {
 
         HaikuPoem.getSecondLine();
-        scanner.nextLine();
+        String secondLine = inputFromUser.nextLine();
+
+        return secondLine;
+    }
+
+    public String getThirdLine() {
 
         HaikuPoem.getThirdLine();
-        scanner.nextLine();
+       String thirdLine = inputFromUser.nextLine();
 
+       return thirdLine;
+    }
+
+    public int quitHaikuApp() {
+        System.out.println("PRESS '0' TO QUIT APP");
+        int quitApp = Integer.parseInt(inputFromUser.nextLine());
+        return quitApp;
     }
 }
