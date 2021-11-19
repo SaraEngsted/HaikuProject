@@ -17,25 +17,24 @@ public class HaikuPoem {
         this.haikuID = counter;
     }
 
-    public static String getFirstLine() {
+    public static String firstLine() {
         System.out.println("Please write the first line of your poem: ");
         return firstLine;
     }
 
-    public static String getSecondLine() {
+    public static String secondLine() {
         System.out.println("Please write the second line of your poem: ");
         return secondLine;
     }
 
-    public static String getThirdLine() {
+    public static String thirdLine() {
         System.out.println("Please write your third line of your poem: ");
         return thirdLine;
     }
 
     @Override
     public String toString() {
-        return "HaikuPoem{" +
-                "haikuID=" + haikuID +
-                '}';
+        return "Haiku poem by: " + author + ", ID number: " + haikuID +
+                "\n"+ "\""+ firstLine + '\n' + secondLine + '\n' + thirdLine + "\"";
     }
 }

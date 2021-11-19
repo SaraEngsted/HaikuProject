@@ -46,9 +46,9 @@ public class HaikuAnalysis {
     }
 
     public boolean isPoemValid(HaikuPoem valid) {
-        String lineOne = valid.getFirstLine();
-        String lineTwo = valid.getSecondLine();
-        String lineThree = valid.getThirdLine();
+        String lineOne = valid.firstLine();
+        String lineTwo = valid.secondLine();
+        String lineThree = valid.thirdLine();
 
         if (validIfFive(lineOne) && validIfSeven(lineTwo) && validIfFive(lineThree)) {
             System.out.println("Your poem is valid " + valid + " and will now be saved...");
@@ -60,4 +60,6 @@ public class HaikuAnalysis {
 
     }
 
-}
+
+    }
+

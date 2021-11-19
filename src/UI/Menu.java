@@ -12,6 +12,7 @@ public class Menu {
     }
 
     public void welcomeUser() {
+
         System.out.println("💌💌💌💌💌💌💌💌💌💌💌💌💌💌💌💌💌💌💌");
         System.out.println();
         System.out.println("Welcome to the Haiku Poem app! ");
@@ -25,16 +26,16 @@ public class Menu {
 
     }
 
-    public String author() {
+    public String getAuthor() {
 
-        System.out.println("Author of poem");
+        System.out.println("Author of poem: ");
         String author = inputFromUser.nextLine();
         return author;
     }
 
     public String getFirstLine() {
 
-        HaikuPoem.getFirstLine();
+        HaikuPoem.firstLine();
         String firstLine = inputFromUser.nextLine();
 
         return firstLine;
@@ -42,7 +43,7 @@ public class Menu {
 
     public String getSecondLine() {
 
-        HaikuPoem.getSecondLine();
+        HaikuPoem.secondLine();
         String secondLine = inputFromUser.nextLine();
 
         return secondLine;
@@ -50,14 +51,15 @@ public class Menu {
 
     public String getThirdLine() {
 
-        HaikuPoem.getThirdLine();
+        HaikuPoem.thirdLine();
        String thirdLine = inputFromUser.nextLine();
 
        return thirdLine;
     }
 
     public int quitHaikuApp() {
-        System.out.println("PRESS '0' TO QUIT APP");
+
+        System.out.println("PRESS '1' TO WRITE A POEM \nPRESS '0' TO QUIT APP ");
         int quitApp = Integer.parseInt(inputFromUser.nextLine());
         return quitApp;
     }
