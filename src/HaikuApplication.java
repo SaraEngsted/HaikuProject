@@ -32,12 +32,14 @@ public class HaikuApplication {
 
                 if (valid == true) {
                     app.haikuWriter.savedHaikuPoems(createPoem);
+                }
+
                 } else if (quitOrNot == 0) {
                     System.out.println("Goodbye for now");
                     break;
                 }
 
-                }
+
             }
         }
     }
